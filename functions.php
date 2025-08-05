@@ -46,5 +46,63 @@ function neon_core_scripts() {
 }
 add_action('wp_enqueue_scripts', 'neon_core_scripts');
 
+
+// Language System
+function neon_core_load_textdomain() {
+    load_theme_textdomain('neon-core', get_template_directory() . '/languages');
+}
+add_action('after_setup_theme', 'neon_core_load_textdomain');
+
+// Translation function
+function neon_core_translate($key) {
+    $translations = [
+        'footer_powered_by' => __('Powered By', 'neon-core'),
+        'footer_language' => __('Language', 'neon-core'),
+        'footer_copyright' => __('All rights reserved', 'neon-core'),
+        'footer_designed' => __('Designed for the future', 'neon-core'),
+    ];
+    
+    return $translations[$key] ?? $key;
+}
+
+// Localize script with translations
+function neon_core_localize_script() {
+    $lang_data = [
+        'en' => [
+            'footer_powered_by' => 'Powered By',
+            'footer_language' => 'Language',
+            'footer_copyright' => 'All rights reserved',
+            'footer_designed' => 'Designed for the future'
+        ],
+        'ru' => [
+            'footer_powered_by' => 'Работает на',
+            'footer_language' => 'Язык',
+            'footer_copyright' => 'Все права защищены',
+            'footer_designed' => 'Создано для будущего'
+        ],
+        'fr' => [
+            'footer_powered_by' => 'Propulsé par',
+            'footer_language' => 'Langue',
+            'footer_copyright' => 'Tous droits réservés',
+            'footer_designed' => 'Conçu pour l\'avenir'
+        ],
+        'es' => [
+            'footer_powered_by' => 'Desarrollado con',
+            'footer_language' => 'Idioma',
+            'footer_copyright' => 'Todos los derechos reservados',
+            'footer_designed' => 'Diseñado para el futuro'
+        ],
+        'de' => [
+            'footer_powered_by' => 'Betrieben mit',
+            'footer_language' => 'Sprache',
+            'footer_copyright' => 'Alle Rechte vorbehalten',
+            'footer_designed' => 'Für die Zukunft entworfen'
+        ]
+    ];
+
+    wp_localize_script('neon-core-main', 'neonCoreLang', $lang_data);
+}
+add_action('wp_enqueue_scripts', 'neon_core_localize_script');
 require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/ai-integration.php';
+
