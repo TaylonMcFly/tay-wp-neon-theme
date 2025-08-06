@@ -74,6 +74,15 @@ To contribute:
 5. Open a pull request
 
 ---
+## 🌐 Connect with Taylon McFly
+
+[![YouTube](https://img.icons8.com/color/48/youtube-play.png)](https://www.youtube.com/@taylon-mcfly)
+[![Telegram](https://img.icons8.com/color/48/telegram-app.png)](https://t.me/taylon_mcfly)
+[![Discord](https://img.icons8.com/color/48/discord-logo.png)](https://discord.gg/Hiv9Y24m)
+[![Fiverr](https://img.icons8.com/color/48/fiverr.png)](https://www.fiverr.com/users/taylon_mcfly/)
+---
+
+**Taylon McFly** — Freelance WordPress Developer & Creative Lead
 
 # 🌌 Neon Core - Футуристичная Тема WordPress
 
@@ -148,3 +157,13 @@ neon-core/
 
 📜 **Лицензия**  
 Neon Core распространяется под лицензией GPL v3. Детали в файле LICENSE.
+
+## 🌐 Cвязаться со мной
+
+[![YouTube](https://img.icons8.com/color/48/youtube-play.png)](https://www.youtube.com/@taylon-mcfly)
+[![Telegram](https://img.icons8.com/color/48/telegram-app.png)](https://t.me/taylon_mcfly)
+[![Discord](https://img.icons8.com/color/48/discord-logo.png)](https://discord.gg/Hiv9Y24m)
+[![Fiverr](https://img.icons8.com/color/48/fiverr.png)](https://www.fiverr.com/users/taylon_mcfly/)
+---
+
+**Taylon McFly** — Freelance WordPress Developer & Creative Lead
